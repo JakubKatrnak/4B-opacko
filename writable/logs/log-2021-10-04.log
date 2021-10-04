@@ -1,0 +1,218 @@
+CRITICAL - 2021-10-04 13:10:06 --> Undefined variable: vypis
+#0 C:\xampp\htdocs\opacko\app\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(23): view('home')
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-10-04 13:18:23 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:18:23 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:20:51 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:20:51 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:21:26 --> Not unique table/alias: 'obor'
+CRITICAL - 2021-10-04 13:21:26 --> Not unique table/alias: 'obor'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:24:32 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:24:32 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:24:33 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:24:33 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:26:32 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:26:32 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-04 13:29:21 --> Not unique table/alias: 'skola'
+CRITICAL - 2021-10-04 13:29:21 --> Not unique table/alias: 'skola'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-04 13:29:47 --> Undefined variable: home
+#0 C:\xampp\htdocs\opacko\app\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(28): view('home')
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-04 13:30:21 --> Undefined variable: home
+#0 C:\xampp\htdocs\opacko\app\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(28): view('home')
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-04 13:34:08 --> Trying to get property 'nazev' of non-object
+#0 C:\xampp\htdocs\opacko\app\Views\home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(28): view('home', Array)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-04 14:05:12 --> Undefined variable: ppocet_prijatych
+#0 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\opacko\app\Controllers\Home.php(57): App\Models\Skoly_model->add('aaa', 'aaa', '1', '5')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->add()
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-04 14:25:30 --> Class 'App\Controllers\Kino_model' not found
+#0 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('36')
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-04 14:28:32 --> Undefined variable: data
+#0 C:\xampp\htdocs\opacko\app\Controllers\Home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 86, Array)
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('36')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-04 14:29:37 --> Undefined variable: skool_model
+#0 C:\xampp\htdocs\opacko\app\Controllers\Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 76, Array)
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('36')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-04 14:29:47 --> Undefined variable: school_model
+#0 C:\xampp\htdocs\opacko\app\Controllers\Home.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 76, Array)
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('36')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-04 14:30:12 --> Call to undefined method App\Models\Skoly_model::getSchool_edit()
+#0 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('36')
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-04 14:37:19 --> Undefined variable: id_filmu
+#0 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\opacko\app\Controllers\Home.php(76): App\Models\Skoly_model->getSchool_edit('11')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('11')
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-10-04 14:39:41 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2021-10-04 14:39:41 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(76): App\Models\Skoly_model->getSchool_edit('3')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('3')
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-04 14:45:28 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(776): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-04 14:49:48 --> Undefined property: stdClass::$id_typ
+#0 C:\xampp\htdocs\opacko\app\Views\edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('edit', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(88): view('edit', Array, Array)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('50')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
