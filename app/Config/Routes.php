@@ -36,8 +36,10 @@ $routes->get('/add', 'Home::add');
 
 $routes->get('/edit', 'Home::edit');
 $routes->get('/edit_school/(:num)', 'Home::edit_school/$1');
+$routes->get('/map/(:num)', 'Home::map/$1');
 
 $routes->post('/do_add', 'Home::add');
+$routes->post('/edit_school/(:num)', 'Home::edit_school/$1');
 
 $routes->group('auth', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
     $routes->get('/', 'Auth::index');

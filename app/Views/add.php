@@ -5,25 +5,30 @@
     <form action="<?= base_url("do_add"); ?>" method="post">
     <div class="form-group">
         <div class="row">
-            <div class="col">
-                <label for="skola">Škola</label>
-                <input type="input" class="form-control" name="skola">
-                <?php 
-                    if($validation->getError('skola')){
-                        echo '<div class="alert alert-danger mt-2">'.$validation->getError('skola').'</div>';
-                    }
-                ?>
+        <div class="col">
+                <div class="form-group">   
+                    <label for="skola">Škola</label>
+                    <select name="skola"  class="form-control">
+                     
+                    <?php foreach($home as $h): ?>  
+                    <option value="<?php echo $h->skola_id;?>"> <?php echo $h->skola_nazev; ?></option>
+                    <?php endforeach; ?> 
+                    
+                    </select>
+                </div>
             </div>
             <div class="col">
-                <label for="mesto">Město</label>
-                <input type="input" class="form-control" name="mesto">
-                <?php 
-                    if($validation->getError('mesto')){
-                        echo '<div class="alert alert-danger mt-2">'.$validation->getError('mesto').'</div>';
-                    }
-                ?>
+                <div class="form-group">   
+                    <label for="mesto">Město</label>
+                    <select name="mesto"  class="form-control">
+                     
+                    <?php foreach($home as $h): ?>  
+                    <option value="<?php echo $h->mesto_id;?>"> <?php echo $h->mesto_nazev; ?></option>
+                    <?php endforeach; ?> 
+                    
+                    </select>
+                </div>
             </div>
-         </div>
     </div>
     <div class="form-group">
     <div class="row">
@@ -40,7 +45,7 @@
                 <div class="form-group">   
                     <label for="obor">obor</label>
                     <select name="obor"  class="form-control">
-                        <option value="1">OAUH</option>
+                        <option value="1">OA</option>
                         <option value="2">IT</option>
                     </select>
                 </div>

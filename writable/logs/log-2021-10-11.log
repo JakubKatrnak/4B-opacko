@@ -1,0 +1,133 @@
+ERROR - 2021-10-11 11:46:40 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-10-11 11:46:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `skola_t...', Array, false)
+#2 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(35): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\opacko\app\Controllers\Home.php(17): App\Models\Skoly_model->getSchool()
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-11 11:46:41 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\opacko\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\opacko\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(229): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(232): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(116): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-10-11 12:06:02 --> syntax error, unexpected 'fucntion' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Skol...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Skol...')
+#3 C:\xampp\htdocs\opacko\app\Controllers\Home.php(77): spl_autoload_call('App\\Models\\Skol...')
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('56')
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-11 12:06:22 --> syntax error, unexpected 'fucntion' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Skol...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Skol...')
+#3 C:\xampp\htdocs\opacko\app\Controllers\Home.php(77): spl_autoload_call('App\\Models\\Skol...')
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('56')
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-10-11 12:15:11 --> Unknown column 'skoly.id' in 'where clause'
+CRITICAL - 2021-10-11 12:15:11 --> Unknown column 'skoly.id' in 'where clause'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pocet_p...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pocet_p...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pocet_p...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1875): CodeIgniter\Database\BaseConnection->query('UPDATE `pocet_p...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(86): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(103): App\Models\Skoly_model->edit('63', '63', '50', '1', '2')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('63')
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-11 12:21:52 --> Unknown column 'skola_id' in 'where clause'
+CRITICAL - 2021-10-11 12:21:52 --> Unknown column 'skola_id' in 'where clause'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `skola_t...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `skola_t...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `skola_t...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `skola_t...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(81): App\Models\Skoly_model->getSchool_edit('63')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('63')
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-10-11 12:46:55 --> Unknown column 'prijati_id' in 'where clause'
+CRITICAL - 2021-10-11 12:46:55 --> Unknown column 'prijati_id' in 'where clause'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `skola_t...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `skola_t...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `skola_t...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `skola_t...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\app\Controllers\Home.php(81): App\Models\Skoly_model->getSchool_edit('57')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->edit_school('57')
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-11 14:32:47 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\opacko\app\Controllers\Home.php(24): view('home', Array)
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-11 14:34:49 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(776): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-11 14:35:26 --> Undefined property: stdClass::$geo
+#0 C:\xampp\htdocs\opacko\app\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 131, Array)
+#1 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->map('11')
+#2 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-11 14:36:53 --> Undefined variable: infowindow
+#0 C:\xampp\htdocs\opacko\app\Views\map.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('map', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(136): view('map', Array)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->map('50')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-11 14:50:56 --> Undefined variable: infowindow
+#0 C:\xampp\htdocs\opacko\app\Views\map.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\opacko\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\opacko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\opacko\system\Common.php(1097): CodeIgniter\View\View->render('map', Array, true)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(137): view('map', Array)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->map('72')
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
