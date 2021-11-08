@@ -1,0 +1,48 @@
+ERROR - 2021-11-07 14:33:26 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-07 14:33:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `skola_t...', Array, false)
+#2 C:\xampp\htdocs\opacko\app\Models\Skoly_model.php(35): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\opacko\app\Controllers\Home.php(19): App\Models\Skoly_model->getSchool()
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->home()
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-07 14:33:26 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in C:\xampp\htdocs\opacko\app\Views\errors\html\error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'C:\\xampp\\htdocs...', 96, Array)
+#1 C:\xampp\htdocs\opacko\app\Views\errors\html\error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(229): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(232): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 C:\xampp\htdocs\opacko\system\Debug\Exceptions.php(116): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-07 15:06:26 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+#0 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\opacko\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\opacko\system\CodeIgniter.php(776): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-11-07 15:11:29 --> Unknown column 'pocet' in 'field list'
+CRITICAL - 2021-11-07 15:11:29 --> Unknown column 'pocet' in 'field list'
+#0 C:\xampp\htdocs\opacko\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `geo-lat...', 0)
+#1 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `geo-lat...')
+#2 C:\xampp\htdocs\opacko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `geo-lat...')
+#3 C:\xampp\htdocs\opacko\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT `geo-lat...', Array, false)
+#4 C:\xampp\htdocs\opacko\app\Controllers\Home.php(150): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\opacko\system\CodeIgniter.php(811): App\Controllers\Home->map_all()
+#6 C:\xampp\htdocs\opacko\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\opacko\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\opacko\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

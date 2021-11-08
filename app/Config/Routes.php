@@ -37,6 +37,7 @@ $routes->get('/add', 'Home::add');
 $routes->get('/edit', 'Home::edit');
 $routes->get('/edit_school/(:num)', 'Home::edit_school/$1');
 $routes->get('/map/(:num)', 'Home::map/$1');
+$routes->get('/map_all', 'Home::map_all');
 
 $routes->post('/do_add', 'Home::add');
 $routes->post('/edit_school/(:num)', 'Home::edit_school/$1');

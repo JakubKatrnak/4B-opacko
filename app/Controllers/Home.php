@@ -64,7 +64,7 @@ class Home extends BaseController
                     $p = $this->request->getVar('pocet'),
                 );
     
-                echo view('layout/header_in');
+                echo view('layout/header');
                 echo view('add', $data);
                 echo view('layout/footer');
             }
@@ -105,7 +105,7 @@ class Home extends BaseController
                         $p = $this->request->getVar('pocet'),
 				   );
 				   	
-				 	echo view('layout/header_in');
+				 	echo view('layout/header');
 					echo view('edit', $data);
 					echo view('layout/footer');
 				}
@@ -131,14 +131,40 @@ class Home extends BaseController
         $value->nazev, $value->lat, $value->long
       ];
       $infowindow[] = [
-        "<div class=info_content><h3>".$value->nazev."</h3><p>".$value->nazev."</p></div>"
+        "<div class=info_content><h3>".$value->nazev."</h3><p>".$value->lat." - ".$value->long."</p></div>"
        ];          
     }
     $location['markers'] = json_encode($markers);
     $location['infowindow'] = json_encode($infowindow);
     
-    echo view('layout/header_in');
+    echo view('layout/header');
     echo view('map',$location);
     echo view('layout/footer');
     }
+
+    public function map_all() {
+         
+        $db      = \Config\Database::connect();
+        $builder = $db->table('skola');  
+    
+        $query = $builder->select('geo-lat AS lat, geo-long AS long, nazev, mesto')->get();
+        $data = $query->getResult();
+    
+        $markers = [];
+    
+        foreach($data as $value) {
+          $markers[] = [
+            $value->nazev, $value->lat, $value->long
+          ];
+          $infowindow[] = [
+            "<div class=info_content><h3>".$value->nazev."</h3><p>".$value->lat." - ".$value->long."</p></div>"
+           ];          
+        }
+        $location['markers'] = json_encode($markers);
+        $location['infowindow'] = json_encode($infowindow);
+        
+        echo view('layout/header');
+        echo view('map',$location);
+        echo view('layout/footer');
+        }
 }
